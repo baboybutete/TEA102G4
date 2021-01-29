@@ -1,0 +1,612 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('/TEA102G4/fonts/icomoon.eot?lmzlyq');
+    src:  url('/TEA102G4/fonts/icomoon.eot?lmzlyq#iefix') format('embedded-opentype'),
+      url('/TEA102G4/fonts/icomoon.ttf?lmzlyq') format('truetype'),
+      url('/TEA102G4/fonts/icomoon.woff?lmzlyq') format('woff'),
+      url('/TEA102G4/fonts/icomoon.svg?lmzlyq#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+* {
+    margin: 0;
+    padding: 0;
+}
+.w {
+    margin: auto;
+}
+.q {
+    width: 100%;
+    margin: auto;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table; 
+  }
+  .clearfix:after {
+    clear:both;
+  }
+  .clearfix {
+     *zoom:1;
+  }   
+ 
+/* .header {
+    height: 42px;
+    //層疊到 
+    margin: 30px auto;
+} */
+.header {
+    position: sticky;
+    top:0;
+    width: 100%;
+    background-color: rgb(236, 233, 233);
+    /* border-bottom: 1px solid rgb(255, 0, 0); */
+    height: 60px;
+    z-index: 10;
+    
+}
+.log {
+    height: 60px;
+    width: 110px;
+    margin-left: 20px;
+    float: left;
+}
+.log img{
+    margin-top: 1px;
+    width: 100%;
+    
+}
+
+/* search模組*/
+.searchmap {
+    float: left;
+    width: 360px;
+    height: 45px;
+    margin-top: 10px;
+    
+}
+.searchmap input  {
+    float: left;
+    width: 300px;
+    height: 40px;
+    border: 1px solid rgb(203, 203, 203) ;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius:10px;
+    
+}
+
+.lookmap{
+    float: left;
+    width: 50px;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'icomoon';
+    line-height:42px;
+    text-align:center;
+    color:red;
+}
+.searchfood {
+    float: left;
+    width: 360px;
+    height: 45px;
+    margin-top: 10px;
+}
+.searchfood input {
+    float: left;
+    width: 300px;
+    height: 40px;
+    border: 1px solid rgb(203, 203, 203) ;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius:10px;
+}
+.lookfood{
+    float: left;
+    width: 50px;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'icomoon';
+    line-height:42px;
+    text-align:center;
+    color:rgba(165, 42, 42, 0.747);
+}
+.searchinput{
+    float: left;
+}
+
+
+.searchfood button {
+    float: left;
+    width: 50px;
+    height: 40px;
+    border: 0;
+    
+}
+.searchbut{
+    float: left;
+    font-family: 'icomoon';
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border-radius:20px;
+    border: 1px solid rgb(255, 255, 255) ;
+    color:rgb(0, 0, 0);
+    margin-top: 10px;
+    
+
+}
+
+.home {
+    float: left;
+    line-height: 60px;
+    margin-left: 10px;
+    margin-top: 0px;
+    font-size: 16px;
+    color: #666;
+    width: 50px;
+    height: 60px;
+}
+
+.manager {
+    float: left;
+    line-height: 60px;
+    margin-top: 0px;
+    font-size: 16px;
+    color: #666;
+    width: 80px;
+    height: 60px;
+    line-height: 60px;
+}
+.user {
+    
+    float: left;
+    line-height: 60px;
+    font-size: 18px;
+    color: #666;
+    width: 130px;
+    height: 60px;
+    
+}
+.user img{
+/* 	float: right; */
+float:right;
+margin-top:10px;
+height:60%;
+    width:30%;
+
+    vertical-align: middle;
+/*     margin-top:5px; */
+    margin-left:15px;   
+    border-radius:50%;
+}
+.user span{
+	float: right;
+	font-size: 12px;
+}
+
+
+
+/* .logo img{
+    float: left;
+    width: 100px;
+    height: 50px;
+}
+
+/* search模組*/
+/* .searchmap {
+    float: left;
+    width: 410px;
+    height: 42px;
+    margin-left: 70px;
+}
+.searchfood {
+    float: left;
+    width: 462px;
+    height: 42px;
+}
+.lookmap{
+    float: left;
+    width: 50px;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'icomoon';
+    line-height:42px;
+    text-align:center;
+    background-color: #fff;
+}
+.lookfood{
+    float: left;
+    width: 50px;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'icomoon';
+    line-height:42px;
+    text-align:center;
+    background-color: #fff;
+    
+}
+.searchinput{
+    float: left;
+}
+.searchmap input  {
+    float: left;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-right: 0;
+    color: #bfbfbf;
+    font-size: 14px;
+    padding-left: 15px;
+}
+.searchfood input {
+    float: left;
+    width: 345px;
+    height: 40px;
+    border: none;
+    border-right: 0;
+    color: #bfbfbf;
+    font-size: 14px;
+    padding-left: 15px;
+}
+.searchfood button {
+    float: left;
+    width: 50px;
+    height: 40px;
+    border: 0;
+    
+}
+.searchbut{
+    font-family: 'icomoon';
+    background: skyblue;
+}
+.user {
+    float: right;
+    line-height: 42px;
+    margin-right: 30px;
+    font-size: 14px;
+    color: #666;
+}  */
+
+div.navbar{
+    display: none;
+}
+
+
+/* banner*/
+.banner {
+    height: 421px;
+    /* background-color: #1c036c; */
+}
+.banner .w {
+    height: 421px;
+}
+
+.searchmodel{
+    float: left;
+    margin-top: 50px;
+    margin-left: 100px;
+} 
+.subnav {
+    float: left;
+    width: 190px;
+    height: 421px;
+    background: rgba(0,0,0, 0.3);
+    position: absolute;
+    top: 60px;
+    z-index: 2;
+}
+
+.banner .res {
+    position: absolute;
+    top: 60px;
+    z-index: 1;
+    height: 421px;
+    width: 100%;
+}
+
+.subnav ul li {
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
+}
+.subnav ul li a {
+    font-size: 14px;
+    color: #fff;
+}
+.subnav ul li a span {
+    float: right;
+}
+.subnav ul li a:hover {
+    color: #00a4ff;
+}
+
+.bd {
+    padding: 0 20px;
+}
+.bd ul li {
+    padding: 14px 0;
+    border-bottom: 1px solid #ccc;
+}
+.bd ul li h4 {
+    font-size: 16px;
+    color: #4e4e4e;
+}
+.bd ul li p {
+    font-size: 12px;
+    color: #a5a5a5;
+}
+.bd .more {
+    display: block;
+    height: 38px;
+    border: 1px solid #00a4ff;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 38px;
+    color: #00a4ff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.goods {
+    height: 60px;
+    background-color: #fff;
+    margin-top: 10px;
+    box-shadow: 0 2px 3px 3px rgba(0,0,0, 0.1);
+    line-height: 60px;
+}
+.goods h3 {
+    float: left;
+    margin-left: 30px;
+    font-size: 16px;
+    color: #00a4ff;
+}
+.goods ul {
+    float: left;
+    margin-left: 30px;
+}
+.goods ul li {
+    float: left;
+}
+.goods ul li a {
+    padding: 0 30px;
+    font-size: 16px;
+    color: #050505;
+    border-left: 1px solid #ccc;
+}
+.mod {
+    float: right;
+    margin-right: 30px;
+    font-size: 14px;
+    color: #00a4ff;
+}
+
+
+.box {
+    margin-top: 30px;
+}
+.box-hd {
+    height: 45px;
+}
+.box-hd h3 {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+}
+.box-hd a {
+    float: right;
+    font-size: 12px;
+    color: #a5a5a5;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.waitinginfo {
+    float: right;
+    width: 230px;
+    height: 300px;
+    background-color: #fff;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+.waitinginfo h2 {
+    height: 48px;
+    background-color: #9bceea;
+    text-align: center;
+    line-height: 48px;
+    font-size: 18px;
+    color: #fff;
+}
+
+#myCanvas{
+  		margin-top:10px;
+  		background-color: white;
+  		
+  }
+  .setdown{
+    float: left;
+    height: 420px;
+    width: 800px;
+    margin-left: 10px;
+    margin-top: 40px;
+    overflow:scroll;
+  	white-space: nowrap;
+	}
+
+.resinfo{
+    float: left;
+    height: 700px;
+    width: 500px;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+.mapdiv{
+    float: right;
+    width: 500px;
+    height: 700px;
+    margin-right: 50px;
+    margin-top: 40px;
+}
+
+.box-bd ul {
+        margin-left: 50px; 
+}
+.box-bd ul li {
+    float: left;
+    width: 200px;
+    height: 270px;
+    background-color: #fff;
+    margin-right: 15px;
+    margin-bottom: 15px;
+   
+}
+.box-bd ul li img {
+    width: 100%;
+    height:50%;
+}
+.box-bd ul li h4 {
+    margin: 20px 20px 20px 25px;
+    font-size: 14px;
+    color: #050505;
+    font-weight: 400;
+}
+.box-bd .info {
+    margin: 0 20px 0 25px;
+    font-size: 12px;
+    color: #999;
+}
+.box-bd .info span {
+    color: #ff7c2d;
+}
+/* footer */
+.footer {
+    height: 415px;
+    background-color: #fff;
+}
+.footer .w {
+    padding-top: 35px;
+}
+
+.copyright p {
+    font-size: 12px;
+    color: #666;
+    margin: 20px 0 15px 0;
+}
+.copyright .app {
+    display: block;
+    width: 118px;
+    height: 33px;
+    border: 1px solid #00a4ff;
+    text-align: center;
+    line-height: 33px;
+    color: #00a4ff;
+    font-size: 16px;
+}
+.links {
+    float: right;
+}
+.links dl {
+    float: left;
+    margin-left: 100px;
+}
+.links dl dt {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+.links dl dd a {
+    color: #333;
+    font-size: 12px;
+}
+@media screen and (max-width: 1216px) { 
+
+     .searchmap { 
+        width: 300px;
+    }
+    .searchmap input  {
+        width: 240px;
+    }
+    .searchfood {
+        width: 300px;
+    }
+    .searchfood input  {
+        width: 240px;
+    }
+}
+@media screen and (max-width: 1096px) {
+
+    .searchmap {
+        width: 200px;
+    }
+    .searchmap input  {
+        width: 140px;
+    }
+    .searchfood {
+        width: 200px;
+    }
+    .searchfood input  {
+        width: 140px;
+    }
+}
+@media screen and (max-width: 896px) {
+
+    .searchmap {
+        width: 100px;
+    }
+    .searchmap input  {
+        width: 40px;
+    }
+    .searchfood {
+        width: 100px;
+    }
+    .searchfood input  {
+        width: 40px;
+    }
+    .manager{
+    	hidden;
+    }
+}
+@media screen and (max-width: 696px) {
+
+    .manager{
+    	display: none !important;
+    }
+}
+@media screen and (max-width: 616px) {
+	.user{
+
+    margin-right: 10px;
+    width: 50px;
+    }
+    .user img{
+
+	float:right;	
+	width:80%
+	}
+	.home{
+	display: none !important;
+	}
+   
+    
+}
+.shoppingcar{
+	float:left;
+	width: 40px;
+    height: 60px;
+}
+.shoppingcar img{
+	width:100%; 
+	margin-top:10px;
+}

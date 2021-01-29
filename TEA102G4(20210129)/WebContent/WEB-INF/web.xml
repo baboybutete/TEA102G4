@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>TEA102G4</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  	<filter>
+		<filter-name>LoginForBackFilter</filter-name>
+		<filter-class>com.filterforbackend.loginfilter.LoginForBackFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>LoginForBackFilter</filter-name>
+		<url-pattern>/back-end/addetail/*</url-pattern>
+		<url-pattern>/back-end/admininfo/*</url-pattern>
+		<url-pattern>/back-end/custinfo/*</url-pattern>
+		<url-pattern>/back-end/orderinfo/*</url-pattern>
+		<url-pattern>/back-end/resinfo/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+		<dispatcher>INCLUDE</dispatcher>
+		<dispatcher>ERROR</dispatcher>
+		<dispatcher>ASYNC</dispatcher>
+	</filter-mapping>
+  	
+  	<filter>
+		<filter-name>loginFilter</filter-name>
+		<filter-class>com.filter.loginfilter.LoginFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>loginFilter</filter-name>
+		<url-pattern>/member/member.do</url-pattern>
+		<url-pattern>/front-end/cust/custindex.jsp</url-pattern>
+		<url-pattern>/front-end/cust/custinfo/listOneCustAccount.jsp</url-pattern>
+		<url-pattern>/front-end/cust/custinfo/update_custinfo_input.jsp</url-pattern>
+		<url-pattern>/front-end/cust/favorites/*</url-pattern>
+		<url-pattern>/front-end/cust/order_process/*</url-pattern>
+		<url-pattern>/front-end/res/carousel/*</url-pattern>
+		<url-pattern>/front-end/res/corrdinate/*</url-pattern>
+		<url-pattern>/front-end/res/menu/*</url-pattern>
+		<url-pattern>/front-end/res/orderdetail/*</url-pattern>
+		<url-pattern>/front-end/res/reshours/*</url-pattern>
+		<url-pattern>/front-end/res/ressinfo/listOneResInfo2.jsp</url-pattern>
+		<url-pattern>/front-end/res/ressinfo/listOneResInfoForCentre.jsp</url-pattern>
+		<url-pattern>/front-end/res/ressinfo/update_resinfo_input2.jsp</url-pattern>
+		<url-pattern>/front-end/res/ressinfo/updateResinfoForCentre.jsp</url-pattern>
+		<url-pattern>/front-end/res/waiting/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+		<dispatcher>INCLUDE</dispatcher>
+		<dispatcher>ERROR</dispatcher>
+		<dispatcher>ASYNC</dispatcher>
+	</filter-mapping>
+</web-app>

@@ -1,0 +1,11 @@
+<%!
+	public String getBaseString(byte[] byteImg) {
+		if((byteImg != null) && (byteImg.length != 0)){
+			String imgString = Base64.getEncoder().encodeToString(byteImg);
+			return "data:image/jpg;base64,"+imgString;
+		}else{
+			return "#";
+		}
+	}
+%>
+

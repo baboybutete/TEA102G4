@@ -1,0 +1,77 @@
+body{
+  margin: 0px;  /*消除body區域預設的margin*/
+  background: antiquewhite; /*設定body背景色*/
+  display: flex; /*使物件依序排列*/
+  flex-direction: column; /*使物件垂直排列*/
+}
+.header{
+  height: 100px; /*設定header高度*/
+  background: lightgoldenrodyellow; /*設定header背景色*/
+  border-bottom: 2px solid darkgrey;/*設定heade下方底線樣式*/
+  
+}
+.logo img{ /*設定logo大小與位置*/
+  height: 70px;
+  width: 140px;
+  margin-left: 40px;
+  margin-top: 15px;
+}
+.subnav { /*設定側邊欄*/
+    float: left;
+    width: 200px;
+    height: 600px;
+    background: #b8d5b8;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: .40rem;
+}
+.subnav ul li { /*設定li高度, ex 查詢消費者的高度*/
+    height: 30px;
+    line-height: 25px;
+    list-style: none
+}
+.subnav ul{ /*ul與側邊攔框的距離*/
+  padding-left: 30px;
+}
+.subnav ul li a { /*側邊攔小項目的字體跟顏色*/
+    font-size: 14px;
+    color: #8f8787;
+}
+.subnav ul li a:hover { /*滑鼠移到側邊攔小項目的顏色*/
+    color: #00a4ff;
+}
+.subnav h3{ /*側邊攔大標題的字體顏色*/
+  margin: 0px;
+  color: #ff5151;
+}
+.footer { /*footer的高跟背景色*/
+    height: 70px;
+    background-color: #8f8787;
+}
+.copyright { /*應該是讓它飄浮...吧*/
+    float: left;
+}
+.copyright p { /*版權字體大小與位置*/
+    font-size: 12px;
+    color: #fff;
+    margin: 20px 0 15px 40px;
+}
+.links { /*關於平台....在footer右側*/
+    float: right;
+    margin-right: 40px;
+}
+.links dl { /*讓footer右側的項目水平排列*/
+    float: left;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+.links dl dt {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+.links dl dd a {
+    color: #333;
+    font-size: 12px;
+}
